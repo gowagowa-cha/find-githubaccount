@@ -22,10 +22,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+	width: 722px;
+	margin: 0 auto;
 }
 
 .app-container {
-  max-width: 800px;
+  width: 100%;
 }
 
 .app-form {
@@ -36,7 +38,7 @@ body {
 
 .app-input {
   width: 100%;
-  padding: 18px 60px;
+  padding: 18px 122px 18px 65px;
   background-image: url('./assets/img/search.svg');
   background-repeat: no-repeat;
   background-position: 23px center;

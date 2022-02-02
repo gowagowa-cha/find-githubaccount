@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Input from "./conponents/Input";
-import Users from './conponents/Users'
+import Users from "./conponents/Users";
 
 import "./style.css";
 
@@ -19,6 +19,7 @@ function App() {
 			setUsers(res.data);
 		} catch (error) {
 			setLoading(false);
+			setInputValue("");
 			alert(`Пользователь "${inputValue}" не найден`);
 		}
 	}
