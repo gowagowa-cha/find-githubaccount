@@ -16,7 +16,7 @@ function Users({ users }) {
 							<span>{users.login}</span>
 						</h1>
 						<p className='app-user_about'>
-							Frontend Developer. UI Designer. JavaScript ❤️ ReactJS ⚛ React Native, NodeJS, PHP
+							{users.bio}
 						</p>
 					</div>
 				</div>

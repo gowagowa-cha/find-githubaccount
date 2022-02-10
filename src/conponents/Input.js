@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({inputValue, getFetch, setInputValue, loading}) {
+function Input({ inputValue, getFetch, setInputValue, loading }) {
 	return (
 		<form onClick={(e) => e.preventDefault()} className='app-form'>
 			<input
@@ -8,10 +8,10 @@ function Input({inputValue, getFetch, setInputValue, loading}) {
 				onChange={(e) => setInputValue(e.target.value)}
 				type='text'
 				className='app-input'
-				placeholder='Укажите GitHub-аккаунт'
+				placeholder="Укажите GitHub-аккаунт например: 'gowagowa-cha'"
 			/>
 			<button onClick={getFetch} className='app-form_btn'>
-				{loading ? "Загрузка...": "Найти"}
+				{loading ? "Загрузка..." : "Найти"}
 			</button>
 		</form>
 	);
